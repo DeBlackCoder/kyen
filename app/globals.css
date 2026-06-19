@@ -1,26 +1,59 @@
 @import "tailwindcss";
 
+/* ── Tell Tailwind v4 to use .dark class for dark: variants ── */
+@variant dark (&:where(.dark, .dark *));
+
+/* ── CSS custom properties ──────────────────────────────────── */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
+.dark {
+  --background: #0f0f0f;
+  --foreground: #f1f1f1;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ── Base ───────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  font-size: 17px;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lato", system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  font-weight: 400;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+nav, button, label, input, textarea, select {
+  font-family: "Lato", system-ui, sans-serif;
+}
+
+/* ── Scaled-up text sizes ───────────────────────────────────── */
+.text-xs   { font-size: 0.82rem  !important; }
+.text-sm   { font-size: 0.95rem  !important; }
+.text-base { font-size: 1.075rem !important; }
+.text-lg   { font-size: 1.225rem !important; }
+.text-xl   { font-size: 1.375rem !important; }
+.text-2xl  { font-size: 1.65rem  !important; }
+.text-3xl  { font-size: 2.1rem   !important; }
+.text-4xl  { font-size: 2.6rem   !important; }
+.text-5xl  { font-size: 3.2rem   !important; }
+.text-6xl  { font-size: 3.9rem   !important; }
