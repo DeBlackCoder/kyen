@@ -15,21 +15,12 @@ export const metadata: Metadata = {
     description: "Transforming Farm Produce. Empowering Farmers. Nourishing Communities.",
     url: "https://kyen.vercel.app",
     siteName: "Kyen Products & Supplies",
-    images: [
-      {
-        url: "https://kyen.vercel.app/images/nrd-D6Tu_L3chLE-unsplash.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Kyen Products & Supplies - Fresh Agricultural Produce",
-      },
-    ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Kyen Products & Supplies Ltd",
     description: "Transforming Farm Produce. Empowering Farmers. Nourishing Communities.",
-    images: ["https://kyen.vercel.app/images/nrd-D6Tu_L3chLE-unsplash.jpg"],
   },
 };
 
