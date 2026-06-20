@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: "Kyen Products & Supplies",
     images: [
       {
-        url: "/images/nrd-D6Tu_L3chLE-unsplash.jpg",
+        url: "https://kyen.vercel.app/images/nrd-D6Tu_L3chLE-unsplash.jpg",
         width: 1200,
         height: 630,
         alt: "Kyen Products & Supplies - Fresh Agricultural Produce",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kyen Products & Supplies Ltd",
     description: "Transforming Farm Produce. Empowering Farmers. Nourishing Communities.",
-    images: ["/images/nrd-D6Tu_L3chLE-unsplash.jpg"],
+    images: ["https://kyen.vercel.app/images/nrd-D6Tu_L3chLE-unsplash.jpg"],
   },
 };
 
