@@ -9,11 +9,11 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 export const metadata: Metadata = {
   title: "Kyen Products & Supplies Ltd",
   description: "Transforming Farm Produce. Empowering Farmers. Nourishing Communities.",
-  metadataBase: new URL("https://kyenproducts.com"),
+  metadataBase: new URL("https://kyen.vercel.app"),
   openGraph: {
     title: "Kyen Products & Supplies Ltd",
     description: "Transforming Farm Produce. Empowering Farmers. Nourishing Communities.",
-    url: "https://kyenproducts.com",
+    url: "https://kyen.vercel.app",
     siteName: "Kyen Products & Supplies",
     images: [
       {
