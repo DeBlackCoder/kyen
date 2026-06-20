@@ -9,6 +9,28 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 export const metadata: Metadata = {
   title: "Kyen Products & Supplies Ltd",
   description: "Transforming Farm Produce. Empowering Farmers. Nourishing Communities.",
+  metadataBase: new URL("https://kyenproducts.com"),
+  openGraph: {
+    title: "Kyen Products & Supplies Ltd",
+    description: "Transforming Farm Produce. Empowering Farmers. Nourishing Communities.",
+    url: "https://kyenproducts.com",
+    siteName: "Kyen Products & Supplies",
+    images: [
+      {
+        url: "/images/nrd-D6Tu_L3chLE-unsplash.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Kyen Products & Supplies - Fresh Agricultural Produce",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kyen Products & Supplies Ltd",
+    description: "Transforming Farm Produce. Empowering Farmers. Nourishing Communities.",
+    images: ["/images/nrd-D6Tu_L3chLE-unsplash.jpg"],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
